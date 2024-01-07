@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Door</title>
+	<style>
+		body
+		{
+			background-color: black;
+		}
+		div
+		{
+			width: 350px;
+			height: 350px;
+			margin: 60px auto;
+			border: 2px solid papayawhip;
+			box-shadow: 0px 0px 10px papayawhip;
+			border-radius: 10px;
+			overflow: hidden;
+			position: relative;
+            transform: rotate(106deg);
+
+		}
+		div>img
+		{
+			width: inherit;
+			height: inherit;
+			padding: 0px;
+			margin: 0px;
+			border-radius: inherit;
+			filter: grayscale(100%);
+			transition: all 1s linear 1s;
+		}
+
+		div:hover>img
+		{
+			cursor: pointer;
+			transform: scale(1.2,1.2);
+			filter: grayscale(0%);
+		}
+		div>#wrap
+		{
+			background-color: rgb(211, 141, 203);
+			position: absolute;
+			top: -60px;
+			left: 0px;
+			transition: all 1s linear 1s;
+            
+            
+
+		}
+		div:hover>#wrap
+		{
+			cursor: pointer;
+			transform: translateY(-100%);
+		}
+        
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../cricket/image/hd1.avif">
+		<div id="wrap"></div>
+		<div id="door1"></div>
+		<div id="door2"></div>
+	</div>
+
+</body>
+</html>
